@@ -17,24 +17,24 @@ $comments = $_POST['comments'];
 $verify   = $_POST['verify'];
 
 if(trim($name) == '') {
-	echo '<div class="error_message">Attention! You must enter your name.</div>';
+	echo '<div class="error_message">!Atención! Introduce tu nombre.</div>';
 	exit();
 } else if(trim($email) == '') {
-	echo '<div class="error_message">Attention! Please enter a valid email address.</div>';
+	echo '<div class="error_message">!Atención! Por favor introduce un e-mail valido.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="error_message">Attention! You have enter an invalid e-mail address, try again.</div>';
+	echo '<div class="error_message">!Atención! Haz introducido un e-mail invalido, intenta nuevamente.</div>';
 	exit();
 }
 
 if(trim($comments) == '') {
-	echo '<div class="error_message">Attention! Please enter your message.</div>';
+	echo '<div class="error_message">!Atención! Por favor escribe tu mensaje.</div>';
 	exit();
 } else if(!isset($verify) || trim($verify) == '') {
-	echo '<div class="error_message">Attention! Please enter the verification number.</div>';
+	echo '<div class="error_message">!Atención! Por favor introduce código verificación.</div>';
 	exit();
 } else if(trim($verify) != '4') {
-	echo '<div class="error_message">Attention! The verification number you entered is incorrect.</div>';
+	echo '<div class="error_message">!Atención! Código de verificación incorrecto.</div>';
 	exit();
 }
 
@@ -48,7 +48,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "example@thmeforest.net";
+$address = "me@intersys.mx";
 
 
 // Configuration option.
@@ -81,8 +81,8 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
-	echo "<h3>Email Sent Successfully.</h3>";
-	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+	echo "<h3>Correo enviado satisfactoriamente</h3>";
+	echo "<p>Gracias <strong>$name</strong>, Tu mensaje se me ha enviado.</p>";
 	echo "</div>";
 	echo "</fieldset>";
 
