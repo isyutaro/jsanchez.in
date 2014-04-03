@@ -94,9 +94,9 @@ box-shadow:  0px 0px 30px 1px rgba(0, 0, 0, 0.6);
 
 .top-pic img 							{	text-align:centere; max-width:230px; max-height:230px; margin:auto; -moz-border-radius: 255px; /* Firefox */ -khtml-border-radius: 255px; -webkit-border-radius: 255px; /* Safari, Chrome */ border-radius: 255px; /* CSS3 */}
 
-.title-name 							{ 	text-align:center; font-size:28px; font-family: 'Lato';  font-weight:900;   text-transform:uppercase;  color:#111; padding:10px 20px; margin:auto;  z-index:9999; position:relative; }
+.title-name 							{ 	text-align:center; font-size:30px; font-family: 'Lato';  font-weight:800;   text-transform:uppercase;  color:#111; padding:10px 20px; margin:auto;  z-index:9999; position:relative; }
 
-.title-description 						{ 	text-align:center; font-family: 'Open Sans', sans-serif; font-size:13px; text-transform:uppercase; font-weight:600; color:#042d49; margin-bottom:20px;}
+.title-description 						{ 	text-align:center; font-family: 'Open Sans', sans-serif; font-size:16px; text-transform:uppercase; font-weight:600; color:#042d59; margin-bottom:20px;}
 
 /*======================================================
 /*	Container
